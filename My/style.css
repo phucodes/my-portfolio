@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.block-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.block-text p {
+  width: 100%;
+  margin: 0 45% 5px 0;
+  font-size: 48px;
+  text-align: right;
+  letter-spacing: -2px;
+  color: #303030;
+  font-weight: 700;
+}
+
+.block-text p:nth-of-type(2) {
+  margin-top: -40px;
+  font-size: 64px;
+  letter-spacing: -5px;
+}
+
+
