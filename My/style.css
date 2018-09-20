@@ -82,54 +82,63 @@ body {
 
 .grids {
     width: 100%;
-    height: 200vh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.box {
+    width: 50%;
+    height: 100vh;
+    background-color: #E74C3C;
+    background-size: cover;
+    background-position: center;
+    background-image: url("design-101.jpg");
+}
+
+.side {
+    padding: 0 0 0 10px;
+    width: calc(50% - 10px);
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
 
-.grid-box {
-    width: calc(50% - 20px);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.grid-box:nth-child(1) {
-    background-image: url("design-101.jpg");
-}
-
-.grid-box:nth-child(2) {
-    background-image: url("kelly.jpg");
-    height: 50vh;
-    width: calc(50% - 10px);
-    margin-right: 10px;
-}
-
-/* .box-2 {
-    background-image: url("coffee-package.jpg");
-    width: calc(50% - 10px);
+.inbox {
+    width: 100%;
     height: 50vh;
     background-size: cover;
     background-position: center;
-    margin-right: 10px;
-} */
+}
 
-.grid-box:nth-child(3) {
+.inbox:nth-of-type(1) {
+    margin-bottom: 10px;
     background-image: url("coffee.png");
-    height: 50vh;
-    width: calc(50% - 20px);
-    margin-left: 10px;
 }
 
-.grid-box:nth-child(4) {
+.inbox:nth-of-type(2) {
+    height: calc(50vh - 10px);
+    background-image: url("kelly.jpg");
+}
+
+.side:nth-child(3):first-child div {
     background-image: url("coffee-package.jpg");
-    width: calc(50% - 10px);
+    padding: 10px;
 }
 
-.grid-box:nth-child(5) {
+.side:nth-child(3) {
+    padding: 10px 0;
+    width: 50%;
+}
+
+.box:nth-child(2n) {
     background-image: url("portrait.jpg");
-    width: calc(50% - 20px);
-    height: 50vh;
+    width: calc(50% - 10px);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#box-3 {
+    background-image: url("coffee-package.jpg");
 }
